@@ -20,7 +20,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 
-
 <body>
   <header>
     <nav class="navbar container">
@@ -30,13 +29,22 @@
         </div>
         <span>Adwenpa Center</span>
       </div>
-      <ul class="nav-links">
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="campaign.html">Campaigns</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+
       <div class="contact-donate">
         <a href="tel:+233554083410" class="contact">(+233) 55 408 3410</a>
         <button class="btn-donate"
@@ -113,7 +121,16 @@
     <p>&copy; 2025 Adwenpa Center. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Mobile Hamburger Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile');
+      hamburger.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>
