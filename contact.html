@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adwenpa Charity</title>
+
+  <!-- Favicon for browsers -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/logo-modified.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/logo-modified.png">
+
+  <!-- Apple Touch Icon for iOS devices -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.jpg">
+
+  <!-- Optional: Web App Manifest (for pinned tabs / homescreens) -->
+  <link rel="manifest" href="assets/manifest.json">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">
+        <div class="logo-holder">
+          <img src="assets/images/logo.jpg" alt="Adwenpa Logo" />
+        </div>
+        <span>Adwenpa Center</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="campaigns.html">Campaigns</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active-link">Contact Us</a></li>
+      </ul>
+      <div class="contact-donate">
+        <a href="tel:+233554083410" class="contact">(+233) 55 408 3410</a>
+         <button class="btn-donate" onclick="window.location.href='https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID'" target="_blank">Donate Now</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero container" style="background: url('assets/icons/contact-us.jpeg') no-repeat center center/cover;">
+    <div class="hero-text">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Reach out with your questions, suggestions, or support inquiries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="make-difference container">
+    <h2>Get in Touch</h2>
+    <p>Fill out the form below and we will get back to you as soon as possible.</p>
+
+    <form action="https://formspree.io/f/xandldww" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Social Media Handles -->
+<section class="social-media container">
+  <h2>Connect With Us</h2>
+  <p>Follow and reach out to us on social media</p>
+  <div class="social-icons">
+    <a href="https://wa.me/+233554083410" target="_blank">
+      <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <a href="https://www.tiktok.com/@edmxwrld" target="_blank">
+      <img src="assets/icons/tiktok.png" alt="TikTok" />
+    </a>
+    <a href="mailto:youremail@randyedem045gmail.com">
+      <img src="assets/icons/gmail.png" alt="Gmail" />
+    </a>
+    <a href="https://www.facebook.com/kojoedem99" target="_blank">
+      <img src="assets/icons/facebook.png" alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/edmxwrld/" target="_blank">
+      <img src="assets/icons/instagram.jpeg" alt="Instagram" />
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <p>&copy; 2025 Adwenpa Center. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
