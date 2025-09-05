@@ -30,7 +30,13 @@
         </div>
         <span>Adwenpa Center</span>
       </div>
-      <ul class="nav-links">
+      <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+
+      </div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="campaign.html">Campaigns</a></li>
         <li><a href="about.html">About</a></li>
@@ -86,5 +92,14 @@
   <footer class="footer container">
     <p>&copy; 2025 Adwenpa Center. All rights reserved.</p>
   </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile');
+      hamburger.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
